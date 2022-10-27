@@ -3,12 +3,11 @@ import time
 import pygame
 
 from src.utils import blit_centered, ninepatch, text
-from src.data import BACKGROUND
 
 
 class Button:
     MULTIPLE_CLICK_INTERVAL = 0.3
-    BACKGROUND = BACKGROUND
+    BACKGROUND = pygame.Color(0, 0, 0, 255)
 
     def __init__(
         self,
